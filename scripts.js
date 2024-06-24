@@ -24,12 +24,37 @@ function loadContent(topic) {
             </ul>
             <!-- Conteúdo existente -->
         `;
+    } else if (topic === 'html') {
+        contentDiv.innerHTML = `
+           <h1>Alteração em HTML Simples</h1>
+            <p>Neste guia, você aprenderá como fazer alterações simples em um arquivo HTML.</p>
+            <h2>Passo a Passo</h2>
+             <ol>
+                <li><strong>Abrir o arquivo HTML:</strong> Use um editor de texto como Notepad++, Sublime Text ou Visual Studio Code para abrir o arquivo HTML que você deseja editar.</li>
+                <li><strong>Editar o conteúdo:</strong> Faça as alterações desejadas no código HTML. Por exemplo, você pode adicionar um novo parágrafo, alterar um título ou modificar atributos de elementos.</li>
+                <li><strong>Salvar o arquivo:</strong> Após fazer as alterações, salve o arquivo.</li>
+                <li><strong>Visualizar no navegador:</strong> Abra o arquivo HTML no seu navegador para ver as alterações aplicadas.</li>
+            </ol>
+            <h2>Resolução de Problemas Comuns</h2>
+            <ul>
+                <li>Se o Azpost não conectar, verifique se há problemas na rede local.</li>
+                <li>Consulte o manual do Azpost para códigos de erro específicos.</li>
+            </ul>
+            <h2>Dicas e Melhores Práticas</h2>
+            <ul>
+                <li>Mantenha o firmware do Azpost atualizado.</li>
+                <li>Realize manutenções periódicas para evitar problemas de conexão.</li>
+            </ul>
+            <!-- Conteúdo existente -->
+        `;
+
     } else if (topic === 'FV') {
         contentDiv.innerHTML = `
             <h1>Título do Outro Tópico</h1>
             <p>Descrição e passos para o outro tópico.</p>
             <!-- Conteúdo específico para outro tópico -->
         `;
+
     } else if (topic === 'NF-e') {
         contentDiv.innerHTML = `
              <h1>Como reconectar um Azpost</h1>
@@ -53,6 +78,7 @@ function loadContent(topic) {
             </ul>
             <!-- Conteúdo existente -->
         `;
+
     } else if (topic === 'CNPJ') {
         contentDiv.innerHTML = `
              <h1>Como reconectar um Azpost</h1>
@@ -76,6 +102,7 @@ function loadContent(topic) {
             </ul>
             <!-- Conteúdo existente -->
         `;
+
     } else if (topic === 'Autentique') {
         contentDiv.innerHTML = `
              <h1>Como configurar um Autentique</h1>

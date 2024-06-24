@@ -5,21 +5,31 @@ body {
     display: flex;
 }
 
+.Logo {
+
+width: 250px;
+height: 150px;
+padding-bottom: 10px;
+padding-left: 30px;
+}
+
 .container {
     display: flex;
     min-height: 100vh; /* Garante que ocupe a altura total da janela */
 }
 .sidebar {
-    width: 310px;
+    width: 320px; /* Ajuste conforme necessário */
     background-color: #f4f4f4;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Garante que os elementos filhos fiquem em coluna */
+    flex-direction: column;
+    flex-shrink: 0; /* Impede que a sidebar diminua */
 }
 
 .sidebar h2 {
-    margin-top: 0;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .sidebar ul {
@@ -29,17 +39,24 @@ body {
 }
 
 .sidebar ul li {
-    margin: 25px 0;
+    margin: 15px 0;
+    padding: 10px; /* Aumenta o padding para ampliar a área clicável */
 }
+
 
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
+    padding: 7px 2px; /* Ajuste o padding para aumentar o espaço ao redor do texto */
+    transition: all 0.3s ease; /* Transição suave para o efeito */
 }
 
 .sidebar ul li a:hover {
     color: #007BFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta o desfoque e a intensidade da sombra */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
 }
+
 
 .content {
     flex-grow: 1; /* Faz com que o conteúdo principal ocupe o restante do espaço */
