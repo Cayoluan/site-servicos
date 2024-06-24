@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://miro.medium.com/v2/resize:fit:960/1*Bj1lk3h9FKTjTHIpMCVUjw.gif') no-repeat center center fixed;
+            background-size: 100%;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .login-container img {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            margin-bottom: 10px;
+        }
+        .login-container input[type="password"] {
+            width: 73%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="submit"] {
+            width: 80%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src='img/SERVIÇOS.png' alt="Logo"> <!-- Substitua pela URL da sua imagem -->
+        <h2>Login</h2>
+        <form onsubmit="return checkPassword(event)">
+            <input type="password" id="password" placeholder="Digite a senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === 'william2024') {
+                window.location.href = 'http://127.0.0.1:5500/index.html';
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+    </script>
+</body>
+</html>
