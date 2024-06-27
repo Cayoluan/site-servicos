@@ -126,7 +126,41 @@ function loadContent(topic) {
                 <li><strong> -</strong> Gerar token</li>
                 <li><strong> - </strong>Cadastrar organização</li>
             </ol>
+            <h2>No Sisloc</h2>        
+            <ul>
+                <li>- Integração de contratos</li>
+                <li>- Integração de documentos</li>
+            </ul>
+            <h3>*Habilitar módulo Integração de Contratos</h3>
+            <h2>*ATENÇÃO*</h2>
+            <ul>
+                <li>- Dados o email informado deve ser o mesmo da conta no autentique</li>
+                <li>-Cadastro de usuario</li>
+                <li>-Cadastro de testemunha</li>
+                <li>- Configuração de Signatario dos contratos da empresa</li>
+                <li>- Cadastro de empresa > aba 13-parametros por empresa: campos URL API e Token</li>
+           
+            </ul>
+            <!-- Conteúdo existente -->
+        `;
+    } else if (topic === 'Automatiza') {
+        contentDiv.innerHTML = `
+             <h1>Como configurar um Automatiza</h1>
+            <p>Neste guia, você aprenderá como configurar um Autentique em poucos passos simples.</p>
+            <h2>Passo a Passo</h2>
+            <ol>
+                <li><strong> -</strong> Acessar: https://www.autentique.com.br/ </li>
+                <li><strong> - </strong>Cadastrar</li>
+                <li><strong> -</strong> Gerar token</li>
+                <li><strong> - </strong>Cadastrar organização</li>
+            </ol>
             <h2>No Sisloc</h2>
+                <video class="video" controls>
+                <source src="videos/1- CRIAR DOMINIO AUTOMATIZA.mkv" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+                </video>
+            
+            
             <ul>
                 <li>- Integração de contratos</li>
                 <li>- Integração de documentos</li>
